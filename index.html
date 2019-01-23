@@ -11,18 +11,27 @@
   <body>
     <div class="container">
       <h1>Word Puzzle</h1>
-
+      <div class="userinput">
       <form id="input">
         <div class="form-group">
           <label for="string">Write a sentence below to turn it into a puzzle:</label>
-          <input id="string" type="text" required> <!--required adds warning for empty field-->
+          <input id="string" class="string" type="text" required> <!--required adds warning for empty field-->
         </div>
 
         <button type="submit" class="btn btn-info">Count!</button>
       </form>
-
-      <p id="output">
-      </p>
+    </div>
+    <div class="result">
+      <h2> Try to guess the missing letters!</h2>
+      <h3 id="output">
+      </h3>
+      <div id="answer">
+      <h2> Result:</h2>
+      <h3 id="answerbox"></h3>
+      </div>
+      <button id="showresult" type="button">Toggle Result!</button>
+      <button id="goBack" type="button">Go to main page</button>
+    </div>
     </div>
   </body>
 </html>
